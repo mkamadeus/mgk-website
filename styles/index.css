@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.decoration-container {
+    @apply inline-block;
+    @apply flex-1;
+    @apply bg-orange-600;
+    @apply h-full;
+}
+
+.grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-items::before {
+    @apply inline-block;
+    content: "";
+    padding-bottom: 100%;
+    vertical-align: top;
+}
+
+.header-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.body-font {
+    font-family: 'Nunito Sans', sans-serif;
+}
